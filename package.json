@@ -1,0 +1,14 @@
+{
+  "name": "deeplink-bridge",
+  "version": "1.0.0",
+  "description": "Static page that opens your mobile app from any link, including social in-app browsers.",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

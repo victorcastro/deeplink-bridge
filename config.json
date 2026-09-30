@@ -1,0 +1,8 @@
+{
+  "universalLink": "https://www.example.com/app/home",
+  "androidPackage": "com.example.myapp",
+  "iosStoreUrl": "https://apps.apple.com/app/id000000000",
+  "androidStoreUrl": "https://play.google.com/store/apps/details?id=com.example.myapp",
+  "fallbackDelay": 2500,
+  "inAppAndroidDelay": 3000
+}

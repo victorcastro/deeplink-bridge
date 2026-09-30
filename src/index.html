@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <title>Opening the app…</title>
+  <style>
+/* @styles */
+  </style>
+</head>
+<body>
+
+  <section id="screen-loading" class="screen active" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <h1>Opening the app…</h1>
+    <p>One moment, redirecting you.</p>
+  </section>
+
+  <section id="screen-instructions" class="screen" aria-live="polite">
+    <h1>Open this link in your browser</h1>
+    <p>This browser can't open the app directly. Follow these steps:</p>
+
+    <ol id="steps-ios" class="steps hidden">
+      <li><span>Tap the <span class="kbd">•••</span> button in the top-right corner.</span></li>
+      <li><span>Choose <strong>"Open in Safari"</strong> or <strong>"Open in external browser"</strong>.</span></li>
+      <li><span>The app will open automatically.</span></li>
+    </ol>
+
+    <ol id="steps-android" class="steps hidden">
+      <li><span>Tap the <span class="kbd">⋮</span> button in the top-right corner.</span></li>
+      <li><span>Choose <strong>"Open in Chrome"</strong> or <strong>"Open in browser"</strong>.</span></li>
+      <li><span>The app will open automatically.</span></li>
+    </ol>
+
+    <p>Can't find the menu? Copy the link and paste it into your browser.</p>
+
+    <button id="btn-copy" type="button" class="btn btn-primary">Copy link</button>
+    <input id="manual-url" class="manual-url" type="text" readonly aria-label="Link to copy">
+    <button id="btn-retry" type="button" class="btn btn-secondary hidden">Try opening the app</button>
+  </section>
+
+  <section id="screen-store" class="screen" aria-live="polite">
+    <div class="store-icon" aria-hidden="true">📲</div>
+    <h1>Looks like you don't have the app</h1>
+    <p>Download it for free to continue.</p>
+    <a id="btn-store" class="btn btn-primary" href="#">Download the app</a>
+    <button id="btn-open-again" type="button" class="btn btn-secondary">I have it, open</button>
+    <a id="btn-web" class="btn btn-link" href="#">Continue on the web</a>
+  </section>
+
+  <div id="menu-hint" class="menu-hint" aria-hidden="true">↗</div>
+
+  <script>
+/* @config */
+/* @lib */
+/* @app */
+  </script>
+</body>
+</html>
